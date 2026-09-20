@@ -1,0 +1,1875 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Para Ashley ❤️</title>
+
+    <!-- FUENTES ROMÁNTICAS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+
+
+    <style>
+
+        /* =========================================
+           CONFIGURACIÓN GENERAL
+        ========================================= */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+
+            background: #ffd8e8;
+
+            color: #5b3047;
+
+            font-family: "Cormorant Garamond", Georgia, serif;
+
+            overflow-x: hidden;
+        }
+
+
+        /* =========================================
+           FONDO GIF
+        ========================================= */
+
+        .pagina {
+
+            min-height: 100vh;
+
+            background-image: url("fondo.gif");
+
+            background-size: cover;
+
+            background-position: center;
+
+            background-repeat: no-repeat;
+
+            background-attachment: fixed;
+
+            padding: 50px 20px;
+        }
+
+
+        /* =========================================
+           TARJETAS PRINCIPALES
+        ========================================= */
+
+        .tarjeta {
+
+            width: 94%;
+
+            max-width: 1000px;
+
+            margin: 0 auto 55px auto;
+
+            padding: 45px;
+
+            background: rgba(255, 247, 251, 0.90);
+
+            border-radius: 30px;
+
+            box-shadow:
+                0 12px 35px rgba(105, 42, 70, 0.20);
+
+            backdrop-filter: blur(6px);
+
+            border: 1px solid rgba(255,255,255,0.8);
+
+            position: relative;
+
+            overflow: hidden;
+        }
+
+
+        /* Decoración de las tarjetas */
+
+        .tarjeta::before {
+
+            content: "♡";
+
+            position: absolute;
+
+            top: 10px;
+
+            left: 25px;
+
+            font-family: "Great Vibes", cursive;
+
+            font-size: 45px;
+
+            color: rgba(214, 51, 132, 0.20);
+        }
+
+        .tarjeta::after {
+
+            content: "♡";
+
+            position: absolute;
+
+            bottom: 5px;
+
+            right: 25px;
+
+            font-family: "Great Vibes", cursive;
+
+            font-size: 45px;
+
+            color: rgba(214, 51, 132, 0.20);
+        }
+
+
+        /* =========================================
+           PORTADA
+        ========================================= */
+
+        .portada {
+
+            text-align: center;
+
+            min-height: 550px;
+
+            display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            align-items: center;
+        }
+
+
+        .portada h1 {
+
+            font-family: "Great Vibes", cursive;
+
+            font-size: 75px;
+
+            font-weight: normal;
+
+            color: #c92872;
+
+            margin-bottom: 25px;
+        }
+
+
+        .portada .subtitulo {
+
+            font-size: 24px;
+
+            max-width: 650px;
+
+            line-height: 1.6;
+
+            margin-bottom: 20px;
+        }
+
+
+        /* =========================================
+           TITULOS
+        ========================================= */
+
+        h2 {
+
+            font-family: "Great Vibes", cursive;
+
+            font-size: 48px;
+
+            font-weight: normal;
+
+            text-align: center;
+
+            color: #c92872;
+
+            margin-bottom: 35px;
+        }
+
+
+        h3 {
+
+            font-family: "Great Vibes", cursive;
+
+            font-size: 34px;
+
+            font-weight: normal;
+
+            color: #c92872;
+
+            margin-bottom: 15px;
+        }
+
+
+        /* =========================================
+           BLOQUES TEXTO + FOTO
+        ========================================= */
+
+        .contenido {
+
+            display: grid;
+
+            grid-template-columns: 1.15fr 0.85fr;
+
+            gap: 40px;
+
+            align-items: center;
+
+            position: relative;
+        }
+
+
+        /* Alternar foto y texto */
+
+        .contenido.invertido {
+
+            grid-template-columns: 0.85fr 1.15fr;
+        }
+
+
+        /* =========================================
+           CAJA DEL TEXTO
+        ========================================= */
+
+        .texto {
+
+            position: relative;
+
+            padding: 35px 32px;
+
+            background: rgba(255, 239, 246, 0.82);
+
+            border-radius: 25px;
+
+            border: 1px solid rgba(214, 51, 132, 0.18);
+
+            box-shadow:
+                0 6px 20px rgba(120, 50, 80, 0.10);
+        }
+
+
+        /* Decoración alrededor del texto */
+
+        .texto::before {
+
+            content: "♡";
+
+            position: absolute;
+
+            top: 8px;
+
+            right: 18px;
+
+            font-family: "Great Vibes", cursive;
+
+            font-size: 32px;
+
+            color: #d63384;
+        }
+
+
+        .texto::after {
+
+            content: "✿";
+
+            position: absolute;
+
+            bottom: 8px;
+
+            left: 18px;
+
+            font-size: 20px;
+
+            color: #e27aa5;
+        }
+
+
+        .texto p {
+
+            font-size: 18px;
+
+            line-height: 1.65;
+
+            text-align: justify;
+
+            margin-bottom: 18px;
+        }
+
+
+        .texto p:last-child {
+
+            margin-bottom: 0;
+        }
+
+
+        .frase {
+
+            text-align: center !important;
+
+            font-size: 21px !important;
+
+            color: #b52d69;
+
+            font-weight: 600;
+        }
+
+
+        /* =========================================
+           FOTOS
+        ========================================= */
+
+        .foto-contenedor {
+
+            text-align: center;
+
+            position: relative;
+        }
+
+
+        .foto-marco {
+
+            padding: 10px;
+
+            background: white;
+
+            border-radius: 12px;
+
+            box-shadow:
+                0 10px 25px rgba(80, 30, 50, 0.22);
+
+            transform: rotate(-2deg);
+
+            transition: 0.4s;
+        }
+
+
+        .foto-marco:hover {
+
+            transform: rotate(0deg) scale(1.03);
+        }
+
+
+        .foto {
+
+            display: block;
+
+            width: 100%;
+
+            max-height: 500px;
+
+            object-fit: cover;
+
+            border-radius: 7px;
+        }
+
+
+        .foto-derecha {
+
+            transform: rotate(2deg);
+        }
+
+
+        .foto-derecha:hover {
+
+            transform: rotate(0deg) scale(1.03);
+        }
+
+
+        .pie-foto {
+
+            font-family: "Great Vibes", cursive;
+
+            font-size: 25px;
+
+            color: #b52d69;
+
+            margin-top: 18px;
+        }
+
+
+        /* =========================================
+           SEPARADORES
+        ========================================= */
+
+        .separador {
+
+            text-align: center;
+
+            color: #d63384;
+
+            font-size: 25px;
+
+            margin: 25px 0;
+        }
+
+
+        /* =========================================
+           CARTA
+        ========================================= */
+
+        .carta {
+
+            max-width: 850px;
+
+            margin: auto;
+
+            padding: 45px;
+
+            background:
+
+                linear-gradient(
+                    rgba(255,245,249,0.95),
+                    rgba(255,239,246,0.95)
+                );
+
+            border-radius: 12px;
+
+            box-shadow:
+                0 10px 25px rgba(90,40,60,0.15);
+
+            border: 1px solid rgba(190,70,120,0.18);
+
+            position: relative;
+        }
+
+
+        .carta::before {
+
+            content: "💗";
+
+            position: absolute;
+
+            top: 15px;
+
+            right: 20px;
+
+            font-size: 25px;
+        }
+
+
+        .carta p {
+
+            font-size: 19px;
+
+            line-height: 1.8;
+
+            text-align: justify;
+
+            margin-bottom: 20px;
+        }
+
+
+        .firma {
+
+            font-family: "Great Vibes", cursive;
+
+            font-size: 40px;
+
+            color: #c92872;
+
+            text-align: right;
+
+            margin-top: 30px;
+        }
+
+
+        /* =========================================
+           SORPRESA
+        ========================================= */
+
+        #regalo {
+
+            display: none;
+
+            margin-top: 30px;
+
+            padding: 30px;
+
+            background: rgba(255, 220, 235, 0.8);
+
+            border-radius: 22px;
+
+            border: 1px solid rgba(214,51,132,0.2);
+
+            animation: aparecer 1s ease;
+        }
+
+
+        #regalo p {
+
+            font-size: 19px;
+
+            line-height: 1.7;
+
+            text-align: center;
+
+            margin-bottom: 15px;
+        }
+
+
+        /* =========================================
+           BOTONES
+        ========================================= */
+
+        .boton {
+
+            display: block;
+
+            margin: 30px auto 0;
+
+            padding: 14px 30px;
+
+            border: none;
+
+            border-radius: 30px;
+
+            background: #d63384;
+
+            color: white;
+
+            font-family: "Cormorant Garamond", serif;
+
+            font-size: 19px;
+
+            font-weight: 600;
+
+            cursor: pointer;
+
+            box-shadow:
+                0 6px 18px rgba(214,51,132,0.3);
+
+            transition: 0.3s;
+        }
+
+
+        .boton:hover {
+
+            transform: scale(1.06);
+
+            background: #b9276d;
+        }
+
+
+        /* =========================================
+           BOTON MUSICA
+        ========================================= */
+
+        .boton-musica {
+
+            position: fixed;
+
+            top: 20px;
+
+            right: 20px;
+
+            z-index: 2000;
+
+            padding: 12px 18px;
+
+            border: none;
+
+            border-radius: 25px;
+
+            background: rgba(255,255,255,0.94);
+
+            color: #c92872;
+
+            font-family: "Cormorant Garamond", serif;
+
+            font-size: 17px;
+
+            font-weight: 600;
+
+            cursor: pointer;
+
+            box-shadow:
+                0 5px 15px rgba(0,0,0,0.15);
+        }
+
+
+        /* =========================================
+           CORAZONES FLOTANTES
+        ========================================= */
+
+        .corazon {
+
+            position: fixed;
+
+            bottom: -30px;
+
+            pointer-events: none;
+
+            z-index: 1000;
+
+            animation: subir 7s linear forwards;
+        }
+
+
+        @keyframes subir {
+
+            0% {
+
+                transform:
+                    translateY(0)
+                    rotate(0deg);
+
+                opacity: 1;
+            }
+
+            100% {
+
+                transform:
+                    translateY(-110vh)
+                    rotate(360deg);
+
+                opacity: 0;
+            }
+        }
+
+
+        /* =========================================
+           ANIMACIÓN
+        ========================================= */
+
+        @keyframes aparecer {
+
+            from {
+
+                opacity: 0;
+
+                transform:
+                    translateY(25px);
+            }
+
+            to {
+
+                opacity: 1;
+
+                transform:
+                    translateY(0);
+            }
+        }
+
+
+        /* =========================================
+           CELULAR
+        ========================================= */
+
+        @media (max-width: 750px) {
+
+            .pagina {
+
+                padding: 25px 10px;
+            }
+
+
+            .tarjeta {
+
+                width: 96%;
+
+                padding: 30px 18px;
+
+                margin-bottom: 35px;
+            }
+
+
+            .portada {
+
+                min-height: 500px;
+            }
+
+
+            .portada h1 {
+
+                font-size: 55px;
+            }
+
+
+            .portada .subtitulo {
+
+                font-size: 20px;
+            }
+
+
+            h2 {
+
+                font-size: 40px;
+
+                margin-bottom: 25px;
+            }
+
+
+            .contenido,
+            .contenido.invertido {
+
+                display: flex;
+
+                flex-direction: column;
+
+                gap: 25px;
+            }
+
+
+            .texto {
+
+                width: 100%;
+
+                padding: 28px 22px;
+
+                order: 1;
+            }
+
+
+            .foto-contenedor {
+
+                width: 100%;
+
+                order: 2;
+            }
+
+
+            .texto p {
+
+                font-size: 17px;
+
+                line-height: 1.6;
+            }
+
+
+            .carta {
+
+                padding: 28px 20px;
+            }
+
+
+            .carta p {
+
+                font-size: 18px;
+
+                line-height: 1.7;
+            }
+
+
+            .boton-musica {
+
+                top: 10px;
+
+                right: 10px;
+
+                font-size: 14px;
+
+                padding: 9px 13px;
+            }
+        }
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================================
+         MUSICA
+    ========================================= -->
+
+    <audio id="musica" loop>
+
+        <source
+            src="musica.mp3"
+            type="audio/mpeg">
+
+    </audio>
+
+
+    
+
+
+    <div class="pagina">
+
+
+        <!-- =========================================
+             1. PORTADA
+        ========================================= -->
+
+        <section class="tarjeta portada">
+
+            <h1>
+                Feliz cumpleaños,
+                mi amor ❤️
+            </h1>
+
+            <p class="subtitulo">
+
+                Hoy es un nuevo día para ti y,
+                para mí, una oportunidad más
+                de celebrar algo muy especial:
+                tu vida.
+
+            </p>
+
+            <p class="subtitulo">
+
+                Esta pequeña página la hice
+                especialmente para ti.
+
+            </p>
+
+
+            <button
+                class="boton"
+                onclick="iniciarPagina()">
+
+                Comenzar 💗
+
+            </button>
+
+        </section>
+
+
+
+        <!-- =========================================
+             2. UN DIA ESPECIAL
+        ========================================= -->
+
+        <section
+            class="tarjeta"
+            id="parte2">
+
+            <h2>
+                Un día especial para ti 🌷
+            </h2>
+
+
+            <div class="contenido">
+
+
+                <div class="texto">
+
+                    <p>
+                        Pequeña, hoy estoy aquí una vez más,
+                        celebrando contigo tu cumpleaños y
+                        deseándote todas las bendiciones y
+                        cosas bonitas que la vida pueda darte.
+                    </p>
+
+                    <p>
+                        Hemos pasado por muchas cosas a lo
+                        largo de estos años. Hemos tenido días
+                        buenos, días difíciles, momentos en los
+                        que todo parecía perfecto y otros en los
+                        que quizás no sabíamos muy bien qué hacer.
+                    </p>
+
+                    <p>
+                        Pero, a pesar de todo, sigues siendo esa
+                        personita a la que valoro y quiero muchísimo.
+                    </p>
+
+                    <p>
+                        Cuando te miro, todavía puedo encontrar
+                        esa misma persona que me hizo sentir tantas
+                        cosas desde el principio.
+                    </p>
+
+                    <p>
+                        No sabes lo importante que es para mí verte
+                        cumplir años. Porque detrás de esta fecha
+                        hay una persona que quiero, que admiro y
+                        que deseo seguir viendo crecer.
+                    </p>
+
+                    <p class="frase">
+                        “Me alegra muchísimo que existas.” ❤️
+                    </p>
+
+                </div>
+
+
+                <div class="foto-contenedor">
+
+                    <div class="foto-marco">
+
+                        <img
+                            src="foto1.jpg"
+                            class="foto"
+                            alt="Ashley">
+
+                    </div>
+
+                    <div class="pie-foto">
+                        Mi pequeña Ashley ❤️
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             3. QUIERO QUE SEPAS ALGO
+        ========================================= -->
+
+        <section class="tarjeta">
+
+            <h2>
+                Quiero que sepas algo... 💌
+            </h2>
+
+
+            <div class="contenido invertido">
+
+
+                <div class="foto-contenedor">
+
+                    <div class="foto-marco foto-derecha">
+
+                        <img
+                            src="foto2.jpg"
+                            class="foto"
+                            alt="Un recuerdo">
+
+                    </div>
+
+                    <div class="pie-foto">
+                        Un pedacito de nuestra historia ❤️
+                    </div>
+
+                </div>
+
+
+                <div class="texto">
+
+                    <p>
+                        Quiero que sepas que te amo y que te
+                        aprecio muchísimo.
+                    </p>
+
+                    <p>
+                        Y no solamente por los momentos bonitos,
+                        sino también por todo lo que hemos vivido
+                        juntos.
+                    </p>
+
+                    <p>
+                        Las llamadas, las conversaciones, las risas,
+                        los buenos momentos e incluso aquellos días
+                        que fueron más difíciles también forman parte
+                        de nuestra historia.
+                    </p>
+
+                    <p>
+                        A veces escucho una canción que me recuerda
+                        a ti, veo un atardecer o simplemente pienso
+                        en tus ojos y en tu manera de ser.
+                    </p>
+
+                    <p>
+                        Me gusta tu forma de amar. Me gusta que seas
+                        una persona cariñosa, sentimental y que
+                        disfrutes compartir tiempo conmigo.
+                    </p>
+
+                    <p>
+                        Te amo, Ashley, y quiero seguir teniendo la
+                        oportunidad de estar en tu corazón y compartir
+                        contigo todo lo que todavía nos queda por vivir.
+                    </p>
+
+                    <p class="frase">
+                        Te amo, mi pequeña Ashley. ❤️
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             4. NUESTROS RECUERDOS
+        ========================================= -->
+
+        <section class="tarjeta">
+
+            <h2>
+                Nuestros recuerdos 📸
+            </h2>
+
+
+            <div class="contenido">
+
+
+                <div class="texto">
+
+                    <p>
+                        ¿Recuerdas todas esas veces en las que me
+                        enviabas fotos de tu carita?
+                    </p>
+
+                    <p>
+                        Son de las que más aprecio, porque cuando
+                        las miro puedo ver cuánto has cambiado a lo
+                        largo de estos años y también recordar todas
+                        las etapas que hemos pasado juntos.
+                    </p>
+
+                    <p>
+                        Recuerdo los días en la playa, donde el mar
+                        parecía combinar perfectamente contigo.
+                    </p>
+
+                    <p>
+                        También recuerdo los regalos de aniversario,
+                        que se convertían en una de mis partes
+                        favoritas de esos meses, porque detrás de
+                        cada uno había un detalle tuyo.
+                    </p>
+
+                    <p>
+                        Cuando miro nuestras fotos, no solamente
+                        veo imágenes. Veo momentos, veo una parte
+                        de nuestra historia y veo a dos personas que
+                        han cambiado, aprendido y crecido.
+                    </p>
+
+                    <p class="frase">
+                        Cada fotografía guarda un pedacito de nuestra historia. ❤️
+                    </p>
+
+                </div>
+
+
+                <div class="foto-contenedor">
+
+                    <div class="foto-marco">
+
+                        <img
+                            src="foto3.jpg"
+                            class="foto"
+                            alt="Nuestro recuerdo">
+
+                    </div>
+
+                    <div class="pie-foto">
+                        Un recuerdo que siempre guardaré 💕
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             5. LO QUE MAS VALORO DE TI
+        ========================================= -->
+
+        <section class="tarjeta">
+
+            <h2>
+                Lo que más valoro de ti 🌷
+            </h2>
+
+
+            <div class="contenido invertido">
+
+
+                <div class="foto-contenedor">
+
+                    <div class="foto-marco foto-derecha">
+
+                        <img
+                            src="foto4.jpg"
+                            class="foto"
+                            alt="Ashley">
+
+                    </div>
+
+                    <div class="pie-foto">
+                        La persona que amo ❤️
+                    </div>
+
+                </div>
+
+
+                <div class="texto">
+
+                    <p>
+                        Hay muchas cosas que amo de ti, pero si
+                        tuviera que explicar qué es lo que más
+                        valoro, tendría que hablar de la persona
+                        que eres.
+                    </p>
+
+                    <p>
+                        Amo tu forma de pensar y esa mentalidad
+                        que tienes. Me gusta escuchar cómo ves las
+                        cosas, cómo expresas lo que sientes y cómo
+                        puedes encontrar significado en pequeños
+                        detalles.
+                    </p>
+
+                    <p>
+                        También amo tu forma de amar.
+                    </p>
+
+                    <p>
+                        Eres una persona cariñosa, sentimental y
+                        disfrutas compartir tiempo con la persona
+                        que quieres. Y para mí eso significa muchísimo.
+                    </p>
+
+                    <p>
+                        Valoro cada vez que quieres hablar conmigo,
+                        cada llamada, cada conversación y cada momento
+                        en el que simplemente quieres estar conmigo.
+                    </p>
+
+                    <p>
+                        Me gusta que puedas ser tú misma conmigo.
+                        Me gusta tu manera de demostrar cariño y
+                        esa parte sensible de ti que siente las cosas
+                        profundamente.
+                    </p>
+
+                    <p class="frase">
+                        No necesito que seas perfecta para quererte.
+                        Me gusta la persona que eres. ❤️
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             6. COSAS QUE ME RECUERDAN A TI
+        ========================================= -->
+
+        <section class="tarjeta">
+
+            <h2>
+                Cosas que me recuerdan a ti 🌸
+            </h2>
+
+
+            <!-- FLORES -->
+
+            <div class="contenido">
+
+                <div class="texto">
+
+                    <h3>
+                        Las flores de cerezo 🌸
+                    </h3>
+
+                    <p>
+                        Si algún día me preguntas qué cosas me
+                        hacen pensar en ti, probablemente tendría
+                        demasiadas respuestas.
+                    </p>
+
+                    <p>
+                        Las flores de cerezo me recuerdan a ti por
+                        lo bonitas y delicadas que pueden ser.
+                    </p>
+
+                </div>
+
+
+                <div class="foto-contenedor">
+
+                    <div class="foto-marco">
+
+                        <img
+                            src="foto5.jpg"
+                            class="foto"
+                            alt="Flores de cerezo">
+
+                    </div>
+
+                    <div class="pie-foto">
+                        🌸
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="separador">
+                ♡ ✿ ♡
+            </div>
+
+
+            <!-- FRESAS -->
+
+            <div class="contenido invertido">
+
+                <div class="foto-contenedor">
+
+                    <div class="foto-marco foto-derecha">
+
+                        <img
+                            src="foto6.jpg"
+                            class="foto"
+                            alt="Fresas">
+
+                    </div>
+
+                    <div class="pie-foto">
+                        🍓
+                    </div>
+
+                </div>
+
+
+                <div class="texto">
+
+                    <h3>
+                        Las fresas 🍓
+                    </h3>
+
+                    <p>
+                        Las fresas me recuerdan a ti por ese lado
+                        dulce que tienes.
+                    </p>
+
+                    <p>
+                        Son de esas pequeñas cosas que quizás no
+                        tendrían ningún significado para otra persona,
+                        pero que para mí terminan llevándome
+                        directamente a ti.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="separador">
+                ♡ ✿ ♡
+            </div>
+
+
+            <!-- MUSICA -->
+
+            <div class="contenido">
+
+                <div class="texto">
+
+                    <h3>
+                        La música que te gusta 🎵
+                    </h3>
+
+                    <p>
+                        Y la música que te gusta siempre me lleva
+                        a pensar en ti.
+                    </p>
+
+                    <p>
+                        Una canción que alguna vez me dedicaste,
+                        una melodía que escuchamos juntos o
+                        simplemente una canción que sé que te gusta
+                        puede hacer que aparezcas inmediatamente
+                        en mis pensamientos.
+                    </p>
+
+                    <p class="frase">
+                        Cuando alguien se vuelve importante para ti,
+                        empiezas a encontrar pequeños pedazos de
+                        esa persona en todas partes. ❤️
+                    </p>
+
+                </div>
+
+
+                <div class="foto-contenedor">
+
+                    <div class="foto-marco">
+
+                        <img
+                            src="foto7.jpg"
+                            class="foto"
+                            alt="Música">
+
+                    </div>
+
+                    <div class="pie-foto">
+                        Una canción puede llevarme a ti. 🎵
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="separador">
+                ♡ ✿ ♡
+            </div>
+
+
+            <div class="texto">
+
+                <p class="frase">
+
+                    Un atardecer.<br>
+                    Una canción.<br>
+                    Una llamada.<br>
+                    Una fotografía.<br>
+                    Un lugar.<br>
+                    Una conversación.
+
+                </p>
+
+                <p>
+                    Incluso pequeños detalles que quizás para
+                    cualquier otra persona no significarían nada.
+                </p>
+
+                <p class="frase">
+                    Pero para mí sí.
+                </p>
+
+                <p>
+                    Y tú has dejado muchos de esos pedacitos
+                    en mi vida.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             7. CARTA
+        ========================================= -->
+
+        <section class="tarjeta">
+
+            <h2>
+                Una carta para ti 💗
+            </h2>
+
+
+            <div class="carta">
+
+                <p>
+                    Mi amor:
+                </p>
+
+                <p>
+                    Hoy quería escribirte algo que no fuera
+                    solamente un “feliz cumpleaños”.
+                </p>
+
+                <p>
+                    Quería que tuvieras algo que pudieras leer
+                    y que te recordara cuánto significas para mí.
+                </p>
+
+                <p>
+                    Me pone un poco triste no poder estar a tu lado
+                    en este día como quisiera, poder darte un abrazo,
+                    mirarte a los ojos y celebrar contigo. Pero al
+                    mismo tiempo me hace feliz saber que tengo la
+                    oportunidad de compartir este momento contigo,
+                    aunque sea de esta manera.
+                </p>
+
+                <p>
+                    Hemos vivido muchas cosas. Algunas hermosas,
+                    otras difíciles y algunas que probablemente
+                    nunca olvidaremos. Pero todas ellas forman
+                    parte de nuestra historia.
+                </p>
+
+                <p>
+                    Y cuando pienso en todo lo que hemos pasado,
+                    me doy cuenta de que no solamente recuerdo
+                    los grandes momentos. También recuerdo las
+                    cosas pequeñas: nuestras conversaciones,
+                    las llamadas, las fotos, las canciones,
+                    las risas y esos momentos en los que
+                    simplemente queríamos estar juntos.
+                </p>
+
+                <p>
+                    Eso es algo que valoro muchísimo de ti.
+                </p>
+
+                <p>
+                    Me encanta cuando quieres compartir tu tiempo
+                    conmigo. Me hace sentir especial saber que
+                    entre tantas cosas que podrías estar haciendo,
+                    también encuentras un espacio para mí.
+                </p>
+
+                <p>
+                    Quiero que sepas que te amo por ser tú.
+                    Por tu forma de pensar, por tu manera de querer,
+                    por lo sentimental que eres, por tu cariño y
+                    por todos esos pequeños detalles que hacen que
+                    seas la persona que conozco.
+                </p>
+
+
+                <div class="foto-contenedor">
+
+                    <div class="foto-marco">
+
+                        <img
+                            src="foto8.jpg"
+                            class="foto"
+                            alt="Una foto especial">
+
+                    </div>
+
+                    <div class="pie-foto">
+                        Una foto de alguien que significa muchísimo para mí. ❤️
+                    </div>
+
+                </div>
+
+
+                <p>
+                    No sé cómo será cada día que venga después de
+                    este cumpleaños, pero sí espero que podamos
+                    seguir compartiendo muchos más recuerdos,
+                    muchas más conversaciones y muchas más sonrisas.
+                </p>
+
+                <p>
+                    Y cuando llegue el momento de mirar hacia atrás,
+                    espero que podamos hacerlo y pensar en todo
+                    lo que vivimos juntos.
+                </p>
+
+                <p>
+                    Así que hoy solamente quiero decirte algo:
+                </p>
+
+                <p class="frase">
+                    Gracias por aparecer en mi vida.
+                </p>
+
+                <p>
+                    Gracias por cada momento, cada palabra,
+                    cada llamada, cada recuerdo y cada muestra
+                    de cariño.
+                </p>
+
+                <p>
+                    Espero poder seguir formando parte de tu vida
+                    y acompañarte mientras persigues tus sueños.
+                </p>
+
+                <p class="frase">
+                    Te amo, Ashley. ❤️
+                </p>
+
+                <p>
+                    Y espero que este cumpleaños sea solamente
+                    el comienzo de un año lleno de cosas bonitas
+                    para ti.
+                </p>
+
+                <div class="firma">
+                    Con amor ❤️
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             8. SORPRESA
+        ========================================= -->
+
+        <section class="tarjeta">
+
+            <h2>
+                Mi pequeña sorpresa 🎁
+            </h2>
+
+
+            <div class="contenido">
+
+                <div class="texto">
+
+                    <p>
+                        Quizás mis sorpresas no siempre sean las
+                        mejores o las más grandes, pero cada una
+                        de ellas nace con la intención de darte
+                        algo que sea solamente para ti.
+                    </p>
+
+                    <p>
+                        Y esta vez mi sorpresa es algo diferente.
+                    </p>
+
+                    <p>
+                        Son estas páginas.
+                    </p>
+
+                    <p>
+                        Cada palabra que estás leyendo fue hecha
+                        pensando en ti. Cada foto, cada detalle y
+                        cada pequeña parte de esta página existe
+                        porque quería hacer algo que pudieras
+                        guardar como un recuerdo.
+                    </p>
+
+                </div>
+
+
+                <div class="foto-contenedor">
+
+                    <div class="foto-marco foto-derecha">
+
+                        <img
+                            src="foto8.jpg"
+                            class="foto"
+                            alt="Regalo">
+
+                    </div>
+
+                    <div class="pie-foto">
+                        Un pequeño regalo hecho para ti 💗
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <button
+                class="boton"
+                onclick="mostrarRegalo()">
+
+                Abrir mi sorpresa 🎁
+
+            </button>
+
+
+            <div id="regalo">
+
+                <h3 style="text-align:center;">
+                    ❤️ Para ti, Ashley ❤️
+                </h3>
+
+                <p>
+                    Tal vez no sea un regalo enorme ni algo que
+                    puedas envolver en una caja.
+                </p>
+
+                <p>
+                    Pero espero que cuando vuelvas a entrar aquí
+                    algún día, puedas recordar este cumpleaños y
+                    recordar que hubo alguien que quiso dedicar
+                    un pedacito de su tiempo para hacer algo
+                    especialmente para ti.
+                </p>
+
+                <p>
+                    Y aunque hoy solamente pueda darte estas
+                    palabras, todavía quedan muchos abrazos,
+                    muchos momentos y muchos recuerdos por crear.
+                </p>
+
+                <p class="frase">
+                    Este es mi pequeño regalo para ti, mi amor. ❤️
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             9. MI DESEO
+        ========================================= -->
+
+        <section class="tarjeta">
+
+            <h2>
+                Mi deseo para ti ✨
+            </h2>
+
+
+            <div class="contenido invertido">
+
+
+                <div class="foto-contenedor">
+
+                    <div class="foto-marco foto-derecha">
+
+                        <img
+                            src="foto1.jpg"
+                            class="foto"
+                            alt="Ashley">
+
+                    </div>
+
+                    <div class="pie-foto">
+                        Todo lo bonito que deseo para ti ❤️
+                    </div>
+
+                </div>
+
+
+                <div class="texto">
+
+                    <p>
+                        Te deseo lo mejor, Ashley.
+                    </p>
+
+                    <p>
+                        Te deseo un lindo día, un feliz cumpleaños
+                        y un nuevo año de vida lleno de experiencias
+                        bonitas.
+                    </p>
+
+                    <p>
+                        Deseo que todas las metas y propósitos que
+                        tengas puedas alcanzarlos poco a poco.
+                    </p>
+
+                    <p>
+                        Que tengas la fuerza para seguir adelante
+                        cuando las cosas se pongan difíciles y la
+                        sabiduría para tomar las decisiones que te
+                        lleven hacia aquello que realmente quieres.
+                    </p>
+
+                    <p>
+                        Estás dejando atrás una etapa importante
+                        de tu vida y entrando poco a poco en una nueva.
+                    </p>
+
+                    <p class="frase">
+                        Paz. ❤️<br>
+                        Sabiduría. 🌷<br>
+                        Felicidad. ✨<br>
+                        Amor. 💗<br>
+                        Salud. 🌸<br>
+                        Y muchísimas bendiciones. 🙏
+                    </p>
+
+                    <p>
+                        Quiero que sigas creciendo sin perder esa
+                        parte de ti que te hace especial.
+                    </p>
+
+                    <p>
+                        Y sobre todo, deseo que algún día puedas
+                        mirar atrás y sentirte orgullosa de todo
+                        lo que lograste.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================================
+             10. FINAL
+        ========================================= -->
+
+        <section class="tarjeta portada">
+
+            <h1>
+                Feliz cumpleaños,
+                Ashley ❤️
+            </h1>
+
+
+            <p class="subtitulo">
+                Gracias por existir.
+            </p>
+
+            <p class="subtitulo">
+                Gracias por formar parte de mi vida.
+            </p>
+
+            <p class="subtitulo">
+                Gracias por cada recuerdo que hemos creado.
+            </p>
+
+            <p class="subtitulo">
+                Y gracias por ser tú.
+            </p>
+
+            <div class="separador">
+                ♡ ✿ ♡
+            </div>
+
+            <p class="subtitulo">
+
+                Esta página termina aquí...
+
+            </p>
+
+            <p class="subtitulo">
+
+                pero espero que nuestra historia todavía tenga
+                muchísimas páginas por escribir.
+
+            </p>
+
+            <p
+                class="frase"
+                style="font-family:'Great Vibes',cursive;font-size:35px;">
+
+                Te amo, mi pequeña Ashley. ❤️
+
+            </p>
+
+            <p
+                class="frase"
+                style="font-family:'Great Vibes',cursive;font-size:35px;">
+
+                Feliz cumpleaños. 🌷
+
+            </p>
+
+        </section>
+
+
+    </div>
+
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================= -->
+
+    <script>
+
+
+        /* =========================================
+           CORAZONES
+        ========================================= */
+
+        function crearCorazon() {
+
+            const corazon =
+                document.createElement("div");
+
+            corazon.classList.add("corazon");
+
+            const corazones = [
+                "❤️",
+                "💗",
+                "💕",
+                "💖",
+                "🌸"
+            ];
+
+            corazon.innerHTML =
+                corazones[
+                    Math.floor(
+                        Math.random() * corazones.length
+                    )
+                ];
+
+            corazon.style.left =
+                Math.random() * 100 + "vw";
+
+            corazon.style.fontSize =
+                (15 + Math.random() * 18) + "px";
+
+            corazon.style.animationDuration =
+                (5 + Math.random() * 4) + "s";
+
+            document.body.appendChild(corazon);
+
+            setTimeout(function() {
+
+                corazon.remove();
+
+            }, 9000);
+
+        }
+
+
+        setInterval(
+            crearCorazon,
+            1000
+        );
+
+
+
+        /* =========================================
+           SORPRESA
+        ========================================= */
+
+        function mostrarRegalo() {
+
+            document.getElementById(
+                "regalo"
+            ).style.display = "block";
+
+        }
+
+
+
+        /* =========================================
+           MUSICA
+        ========================================= */
+
+        function iniciarPagina() {
+
+            const musica =
+                document.getElementById("musica");
+
+            musica.play();
+
+            document.getElementById("parte2").scrollIntoView({
+                behavior: "smooth"
+            });
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
